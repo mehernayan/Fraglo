@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <!--<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
+        <script src="https://kit.fontawesome.com/523214f801.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="css/style.css">
      </head>
     <body>
@@ -14,13 +15,13 @@
               <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="https://d1icd6shlvmxi6.cloudfront.net/gsc/HMI6MG/9c/ad/cd/9cadcd36ddce4a98b1c9ab19d9b372be/images/page_1/u2.jpg?token=cf8c23a358641b03fa20c4f3b34fcd21f2d6ef809b980a34d87a8e0efe24ee2d" class="d-block w-100" alt="...">
+                    <img src="images/carousel1.jpg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="https://d1icd6shlvmxi6.cloudfront.net/gsc/HMI6MG/9c/ad/cd/9cadcd36ddce4a98b1c9ab19d9b372be/images/page_1/u3.jpg?token=b18262dae72bc96ffb85c5e71ee6d4df3610248764c1fb568857701262301507" class="d-block w-100" alt="...">
+                    <img src="images/carousel2.jpg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="https://d1icd6shlvmxi6.cloudfront.net/gsc/HMI6MG/9c/ad/cd/9cadcd36ddce4a98b1c9ab19d9b372be/images/page_1/u4.jpg?token=76622829e9484247e73f41f46a9cf3df0d561e83b56e4e987d46f04b5fc71ab1" class="d-block w-100" alt="...">
+                    <img src="images/carousel3.jpg" class="d-block w-100" alt="...">
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -36,32 +37,30 @@
             <div class="container">
                 <div class="row mar-top-20">
                     <div class="col-12 col-sm-6" >
-                        <div class="row">
-                          <div class="col-12 col-sm-6">
-                            <div class="card card-order mb-2">
-                              <figure class="figure order-banner">
-                                <img class="figure-img" src="https://d1icd6shlvmxi6.cloudfront.net/gsc/HMI6MG/9c/ad/cd/9cadcd36ddce4a98b1c9ab19d9b372be/images/page_1/u50.png?token=9381d94541e7f5749ed219494078d039bc1582331f1042f11c4d6d48a7d9119e" alt="in restaurant" />
-                                <figcaption class="figure-caption">
-                                  <button type="button" class="btn btn-outline ">In-Restaurant<br/>Ordering</button>
-                                </figcaption>
-                              </figure>
+                        <div class="row vertical-line mar-top-30">
+                          <div class="col-12 col-sm-6 card-order">
+                            <div class=" row card-pad">
+                              <div class="col-4 inrest-image">
+                              </div>
+                              <div class="col-8">
+                                <button type="button" class="btn btn-outline btn-fraglo-order">In-Restaurant Ordering</button>
+                              </div>
                             </div>
                           </div>
-                          <div class="col-12 col-sm-6">
-                            <div class="card card-order mb-2">
-                              <figure class="figure  order-banner">
-                                <img class="figure-img" src="https://d1icd6shlvmxi6.cloudfront.net/gsc/HMI6MG/9c/ad/cd/9cadcd36ddce4a98b1c9ab19d9b372be/images/page_1/u53.png?token=c26d4da060bb1982505b5f46f21efc282323232c7f0ce5962bb8f1b8368218f6" alt="take away" />
-                                <figcaption class="figure-caption">
-                                  <button type="button" class="btn btn-outline ">Take away</button>
-                                </figcaption>
-                              </figure>
+                          <div class="col-12 col-sm-6 card-order ">
+                            <div class="row card-pad card-pad-taway">
+                              <div class="col-4 taway-image">
+                              </div>
+                              <div class="col-8">
+                                <button type="button" class="btn btn-outline btn-fraglo-order">Take Away</button>
+                              </div>
                             </div>
                           </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6" >
-                      <div id="carousel-example-multi-1" class="carousel slide carousel-multi-item v-1 mar-top-20" data-ride="carousel">
-                        <h4 class="check-us-text">Popular Restaurants</h4>
+                      <div id="carousel-example-multi-1" class="carousel slide carousel-multi-item v-1" data-ride="carousel">
+                        <h5 class="check-us-text">Popular Restaurants</h5>
                         <!--Controls-->
                         <div class="controls-top pull-right mar-right-30">
                           <a class="btn-floating" href="#carousel-example-multi-1" data-slide="prev"><i
@@ -114,7 +113,7 @@
                 <div class="row mar-top-20">
                     <div class="col-12" >
                         <div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2 mar-top-20" data-ride="carousel">
-                            <h4 class="check-us-text">Nearby Restaurants</h4>
+                            <h5 class="check-us-text">Nearby Restaurants</h5>
                             <!--Controls-->
                             <div class="controls-top pull-right mar-right-30">
                               <a class="btn-floating" href="#carousel-example-multi" data-slide="prev"><i
@@ -197,7 +196,27 @@
             </div>
         </div>
         <div id="footer"></div>
-    
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content btn-radial">
+              <div class="modal-header">
+                <h5>Confirm Location</h5>
+                <button type="button" class="btn btn-fraglo-close" data-dismiss="modal" aria-label="Close">
+                    Confirm
+                </button>
+                </div>
+              <div class="modal-body text-center">
+                <div class="sub-bottom-panel-3 google-map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.8454059135574!2d77.59763381408372!3d12.981737890849276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1663227819f3%3A0x260f5b47895286!2sInfantry%20Rd%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1583517999471!5m2!1sen!2sin" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+              </div>
+              <!--<div class="modal-footer text-center">
+                  <button type="button" class="btn login-proceed btn-fixed">Buy Package</button>
+              </div>-->
+          </div>
+          </div>
+      </div>
         <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
         <script src="js/lib/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

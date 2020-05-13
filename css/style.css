@@ -30,6 +30,9 @@
 .mar-top-20{
     margin-top : 20px;
 }
+.mar-top-30{
+    margin-top : 30px;
+}
 .mar-top-50{
     margin-top : 50px;
 }
@@ -75,6 +78,28 @@
     border: none;
     color: #fff;
     background-color: transparent;
+}
+.btn-fraglo-order{
+    font-size: .75em;
+    border: 1px solid #6A00FF;
+    color: #6A00FF;
+    margin-top: 2rem;
+    min-width: 100%;
+}
+.btn-fraglo-order:hover{
+    border: 1px solid #6A00FF;
+    background-color: #6A00FF;
+    color: #fff;
+}
+.btn-fraglo-close{
+    font-size: .75em;
+    border: 1px solid #6A00FF;
+    color: #6A00FF;
+}
+.btn-fraglo-close:hover{
+    border: 1px solid #6A00FF;
+    background-color: #6A00FF;
+    color: #fff;
 }
 
 /*general styles end*/
@@ -139,44 +164,79 @@ header{
     border: 5px solid #6A00FF;
     border-radius: 50px;
 }
+.search-header{
+    position: absolute;
+    right: 1.4rem;
+    top: .5rem;
+}
+.offer-image{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/offer-violet.svg")no-repeat center center;
+    background-size: contain;
+    margin-top: 5px;
+}
+.offer-image:hover{
+    background: url("../images/offer.svg")no-repeat center center;
+}
+.offer-percentage{
+    position: absolute;
+    left: 20px;
+    font-size: 12px;
+    top: 10px;
+    color: #fff;
+}
+.offer-text{
+    position: absolute;
+    top: 9px;
+}
+.offer-pad{
+    padding-top: 5px;
+}
+.offer-pad .nav-link{
+    font-size: 14px;
+    padding: 0 !important;
+    display: inline-block;
+}
+.offer-pad .nav-link:hover{
+    color: red !important;
+}
+.vertical-line-header {
+    border-right: 1px solid #6A00FF;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+}
 /*==================== 
 	Footer 
 ====================== */
 
 /* Main Footer */
 #footer{
-    position: relative;width: 100%;color: #000;
+    position: relative;width: 100%;color: #fff;
 }
 footer .main-footer{	padding: 20px 0 10px 0;	background: #252525;}
-footer ul{	padding-left: 0;	list-style: none;}
+footer ul{	padding-left: 0;	list-style: none;margin-left: -14px;}
 footer ul a,footer ul a:active,footer ul a:link{color:#000;font-weight: bold;}
 /* Copy Right Footer */
-.footer-copyright {	background: #222;	padding: 5px 0;}
-.footer-copyright .logo {    display: inherit;}
-.footer-copyright nav {    float: right;    margin-top: 5px;}
-.footer-copyright nav ul {	list-style: none;	margin: 0;	padding: 0;}
-.footer-copyright nav ul li {	border-left: 1px solid #505050;	display: inline-block;	line-height: 12px;	margin: 0;	padding: 0 8px;}
-.footer-copyright nav ul li a{	color: #969696;}
-.footer-copyright nav ul li:first-child {	border: medium none;	padding-left: 0;}
-.footer-copyright p {	color: #969696;	margin: 2px 0 0;}
-ul.social-footer2{width:48%;display: inline-block;}
+.footer-copyright{background: #252525;font-size: .6em; padding-top: 10px;}
+.footer-copyright p {	color: #969696;	margin: 10px 0 0;}
+ul.social-footer2{display: inline-block;}
 ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
-ul.social-footer3 li{width:125px;display: inline-block;}
-.follow-text{width:50%;display:inline-block;}
+.widget{
+    font-size: 12px;
+}
+.copy-right{
+    color: #FFD900;
+}
+.horizontal-line-footer{
+    border-top: 1px solid #aaa;
+}
 /* Footer Top */
 .footer-top{	background: #252525;	padding-bottom: 30px;	margin-bottom: 30px;	border-bottom: 3px solid #222;}
-
-/* Footer transparent */
-footer.transparent .footer-top, footer.transparent .main-footer{	background: transparent;}
-footer.transparent .footer-copyright{	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3) ;}
-
-/* Footer light */
-footer.light .footer-top{	background: #ccc;}
-footer.light .main-footer{	background: #ccc;}
-footer.light .footer-copyright{	background: #cacaca;font-size: .6em;}
-
-/* Footer 4 */
-.footer- .logo {    display: inline-block;}
 
 /*carousel*/
 .control-icon{
@@ -344,16 +404,20 @@ ul.social-icons li {width:115px;display: inline-block;}
 .sub-bottom-panel,.shop{
      color: #6A00FF;
 }
-h4.check-us-text{
+.check-us-text{
     display: inline;
     color: #6A00FF;
+}
+.controls-top{
+    display: inline-block;
+    float: right;
 }
 .controls-top a{
     color: #6A00FF;
     padding: 2px 4px;
     border: 2px solid #6A00FF;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 10px;
 }
 .card  a:hover{
     text-decoration: none;
@@ -383,9 +447,34 @@ figure {
     width: 68%;
     padding-left: 10px;
 }
-.card-order{
-    padding: 15px;
+.card-pad{
+    padding: 1rem 0rem;
     background: linear-gradient(to right, #FFD900 60%, #ff9933 100%);
+    margin: 0; 
+    border-radius: .25rem;
+    min-height: 7.6rem;
+}
+.card-pad-taway{
+    background: linear-gradient(to right, #fa9e42 65%,#ff9933  100%);
+}
+.inrest-image{
+    background: url("../images/inrestaurant.png")no-repeat center center;
+    background-size: contain;
+}
+.inrest-image:hover{
+    background: url("../images/inrestaurant-white.png")no-repeat center center;
+    background-size: contain;
+}
+.taway-image{
+    background: url("../images/takeaway.png")no-repeat center center;
+    background-size: contain;
+}
+.taway-image:hover{
+    background: url("../images/takeaway-white.png")no-repeat center center;
+    background-size: contain;
+}
+.vertical-line{
+    border-right: 2px solid #6A00FF;
 }
 .nav-pills .nav-link{
     color: #000;
