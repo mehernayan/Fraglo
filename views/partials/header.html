@@ -31,10 +31,10 @@
     </nav>
   </div>
   <div class="lower-header">
-    <div class="fraglo-logo">
-      <img class="img-fluid" src="./images/fraglo-logo.png" alt="logo" />
-    </div>
     <nav class="container navbar navbar-expand-lg navbar-light indigo navbar-fraglo">
+      <div class="fraglo-logo">
+        <img class="img-fluid" src="./images/fraglo-logo.png" alt="logo" />
+      </div>
       <!--<a class="navbar-brand" href="#"><strong>Chakra</strong></a>-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,20 +58,24 @@
           </button>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
             <form >
-              <h6 class="login-text">Login as a</h6>
-              <div class="text-center mar-top-20">
-                <button class="btn btn-fraglo btn-fixed" type="button">USER</button>
-                <button class="btn btn-fraglo btn-fixed" type="button">MERCHANT</button> <br/><br/>
-                <input type="number" class="form-control" placeholder="phone number"/> <br/>
-                <button class="btn btn-fraglo btn-fixed btn-radial" type="button">Login</button>  <br/>
-              </div>
-              <div class="text-center">
-                <button class="btn btn-link login-text">Guest User?</button>
-                <div class="share-btns">
-                    <button  class="btn login-medium login-facebook mar-top-20"><i class="fa fa-facebook-f"></i></button>
-                    <button  class="btn login-medium login-google mar-top-20"><i class="fa fa-google"></i></button>
+              <div class="card profile-details">
+                <h6 class="card-header">Login as a</h6>
+                <div class="card-body">
+                  <div class="text-center">
+                    <button class="btn btn-fraglo btn-fixed" type="button">USER</button>
+                    <button class="btn btn-fraglo btn-fixed" type="button">MERCHANT</button> <br/><br/>
+                    <input type="number" class="form-control" placeholder="phone number"/> <br/>
+                    <button class="btn btn-fraglo btn-fixed btn-radial" type="button">Login</button>  <br/>
+                  </div>
+                  <div class="text-center">
+                    <button class="btn btn-link login-text">Guest User?</button>
+                    <div class="share-btns">
+                        <button  class="btn login-medium login-facebook mar-top-20"><i class="fa fa-facebook-f"></i></button>
+                        <button  class="btn login-medium login-google mar-top-20"><i class="fa fa-google"></i></button>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </div>  
             </form>
           </div>
         </div>

@@ -1,32 +1,94 @@
 <!--Main Navigation-->
 <header class="fixed-top">
-    <nav class="container navbar fixed-top navbar-expand-lg navbar-light indigo">
-      <a class="navbar-brand" href="#"><strong>Chakra</strong></a>
+  <div class="upper-header">
+    <nav class="container navbar navbar-expand-lg navbar-light indigo locator-bar">
+      <div class="navbar-nav row locator-bar-inner">
+        <div class="col-2 text-center">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter"><img src="./images/location.svg" alt="location"> Marathali</a>
+          <div class="vertical-line-header"></div>
+        </div>
+        <div class="col-6 text-left">
+          <a class="nav-link" href="#"><i class="fa fa-phone-square" aria-hidden="true"></i> 1800 251 251</a>
+        </div>
+        <div class="col-3 text-center">
+          <form>
+            <div class="row">
+             <div class="col-sm-12 mar-top-5">
+                <input type="search" class="form-control form-control-sm" id="resSearch" placeholder="Search for restaurants">
+                <i class="fa fa-search search-header"></i>
+              </div>
+            </div>
+            </form>
+        </div>
+        <div class="col-1 offer-pad">
+          <a class="nav-link" href="#">
+            <span class="offer-image"></span>
+            <span class="offer-percentage">%</span>
+            <span class="offer-text">Offers</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="lower-header">
+    <nav class="container navbar navbar-expand-lg navbar-light indigo navbar-fraglo">
+      <div class="fraglo-logo">
+        <img class="img-fluid" src="./images/fraglo-logo.png" alt="logo" />
+      </div>
+      <!--<a class="navbar-brand" href="#"><strong>Chakra</strong></a>-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Book <span class="sr-only">(current)</span></a>
+          <li id="nav-fraglo" class="nav-item">
+            <a class="nav-link" href="#">Fraglo <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Our Ride</a>
+          <li id="nav-aboutus" class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Trainers</a>
+          <li id="nav-contactus" class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+          <li id="nav-cart" class="nav-item  active">
+            <a class="nav-link" href="#">Cart</a>
           </li>
         </ul>
-        <button type="button" class="btn pull-right btn-radial ">3 left</button>
-        <div class="user-image">
-          <img src="../ChakraNew/images/user.png" class="img-responsive" alt="User" style="width:100%"/>
+        <div class="dropdown login-dropdown">
+          <button class="btn pull-right btn-transparent dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            My Profile
+          </button>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+            <form >
+              <div class="card profile-details">
+                <h6 class="card-header">My Account</h6>
+                <div class="phone-number-container text-right">
+                  <label class="phone-number">8533145632</label>
+                  <button class="btn btn-fraglo btn-fixed pull-right">Edit</button>
+                </div>
+                <div class="card-body">
+                  <div class="list-group profile-text">
+                    <a href="#" class="list-group-item list-group-item-action">
+                      My Order
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">Wallet</a>
+                    <a href="#" class="list-group-item list-group-item-action">Offers</a>
+                    <a href="#" class="list-group-item list-group-item-action">Help</a>
+                    <a href="#" class="list-group-item list-group-item-action">FAQs</a>
+                    <a href="#" class="list-group-item list-group-item-action">Rate and Reviews</a>
+                    <a href="#" class="list-group-item list-group-item-action">Terms and Conditions</a>
+                    <a href="#" class="list-group-item list-group-item-action">Privacy Policy</a>
+                    <a href="#" class="list-group-item list-group-item-action">Logout</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </nav>
+  </div>
   </header>
   <!--Main Navigation-->
   

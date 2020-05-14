@@ -21,6 +21,9 @@
 .pad-left-20{
     padding-left: 20px;
 }
+.pad-left-0{
+    padding-left: 0px;
+}
 .mar-top-5{
     margin-top: 5px;
 }
@@ -80,7 +83,7 @@
     background-color: transparent;
 }
 .btn-fraglo-order{
-    font-size: .75em;
+    font-size: .75rem;
     border: 1px solid #6A00FF;
     color: #6A00FF;
     margin-top: 2rem;
@@ -92,7 +95,7 @@
     color: #fff;
 }
 .btn-fraglo{
-    font-size: .75em;
+    font-size: .75rem;
     border: 1px solid #6A00FF;
     color: #6A00FF;
 }
@@ -156,10 +159,10 @@ header{
     width: 100px;
     height: 100px;
     position: absolute;
-    top: 8px;
     margin: auto;
     display: inline-block;
     left: 50%;
+    margin-left: -50px;
     z-index: 100;
     border: 5px solid #6A00FF;
     border-radius: 50px;
@@ -210,17 +213,24 @@ header{
     right: 0;
     margin: 5px;
 }
+.vertical-line-card {
+    border-right: 1px solid #6A00FF;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+}
 .dropdown-toggle::after{
     border: none;
 }
 .dropdown-menu{
-    left: -11rem;
-    padding: 20px;
+    right: 0rem;
     width: 16rem;
+    padding: 0;
+    left: auto;
 }
-.dropdown{
-    right: 30px;
-}
+
 /*==================== 
 	Footer 
 ====================== */
@@ -245,6 +255,10 @@ ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
 }
 .horizontal-line-footer{
     border-top: 1px solid #aaa;
+}
+#nav-cart{
+    position: relative;
+    left: 32rem;
 }
 /* Footer Top */
 .footer-top{	background: #252525;	padding-bottom: 30px;	margin-bottom: 30px;	border-bottom: 3px solid #222;}
@@ -276,7 +290,7 @@ ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
 /*Login*/
 .fraglo-login-container{
     width: 100%;
-    min-height: 328px;
+    min-height: 320px;
 }
 .login-container{
     margin: 0 auto;
@@ -285,6 +299,7 @@ ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
 }
 .middle-panel{
     background-color: #efefef;
+    font-size: .85rem;
 }
 .login-container label.login-label{
     line-height: 1em;
@@ -292,6 +307,9 @@ ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
     text-align: left !important;
     font-weight: 500;
     color: #aaa;
+}
+.required{
+    color: #db3236;
 }
 .login-proceed{
     background-color: #aaa;
@@ -395,6 +413,63 @@ ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
     padding: 20px 20px;
     background-color: #fff;
     border-radius: 5px;
+}
+.cart-card{
+    padding: 0px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.vendor-name{
+    color: #6A00FF;
+}
+.vendor-name img{
+    width: 15px;
+}
+.vendor-name .btn-floating{
+    background-color: #fff;
+    color: #6A00FF;
+    padding: 8px;
+}
+.vendor-name .item-amount{
+    border: none;
+    width: 2rem;
+    text-align: center;
+    color: #6A00FF;
+}
+.card.bill-details,.card.profile-details{
+    border: none;
+}
+.bill-details .card-header{
+    border: none;
+    color: #6A00FF;
+}
+.card.profile-details .card-header{
+    border: none;
+    color: #6A00FF;
+}
+.card.profile-details .card-body{
+    border: none;
+    color: #222;
+    font-size: .85rem;
+    padding: 0;
+}
+.profile-text .list-group-item{
+    border: none;
+}
+.phone-number-container{
+    color:  #6A00FF;
+    font-size: .75rem;
+    padding: 10px 20px;
+    border-bottom: 1px solid #6A00FF;
+}
+.phone-number-container .phone-number{
+    float: left;
+    margin-top: 5px;
+}
+.table.table-borderless td,.table.table-borderless th{
+    border: none;
 }
 
 /*Home style*/
@@ -505,7 +580,7 @@ figure {
     background-size: contain;
 }
 .vertical-line{
-    border-right: 2px solid #6A00FF;
+    border-right: 1px solid #6A00FF;
 }
 .nav-pills .nav-link{
     color: #000;
