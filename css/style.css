@@ -4,7 +4,7 @@
     border-radius: 20px;
 }
 .btn-fixed{
-    width: 150px !important;
+    width: 100px !important;
 }
 .half-bordered{
     border-radius: 10px 10px 0px 0px;
@@ -86,19 +86,19 @@
     margin-top: 2rem;
     min-width: 100%;
 }
-.btn-fraglo-order:hover{
+.btn-fraglo-order:hover,.btn-fraglo-order:active,.btn-fraglo-order:focus{
     border: 1px solid #6A00FF;
-    background-color: #6A00FF;
+    background-color: #6A00FF !important;
     color: #fff;
 }
-.btn-fraglo-close{
+.btn-fraglo{
     font-size: .75em;
     border: 1px solid #6A00FF;
     color: #6A00FF;
 }
-.btn-fraglo-close:hover{
+.btn-fraglo:hover,.btn-fraglo:active,.btn-fraglo:focus{
     border: 1px solid #6A00FF;
-    background-color: #6A00FF;
+    background-color: #6A00FF !important;
     color: #fff;
 }
 
@@ -210,6 +210,17 @@ header{
     right: 0;
     margin: 5px;
 }
+.dropdown-toggle::after{
+    border: none;
+}
+.dropdown-menu{
+    left: -11rem;
+    padding: 20px;
+    width: 16rem;
+}
+.dropdown{
+    right: 30px;
+}
 /*==================== 
 	Footer 
 ====================== */
@@ -258,6 +269,9 @@ ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
     font-size: 3rem;
     line-height: 1.5em;
 }
+.site-header{
+    color: #6A00FF;
+}
 
 /*Login*/
 .fraglo-login-container{
@@ -268,6 +282,9 @@ ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
     margin: 0 auto;
     border-radius: 5px;
     overflow-x: hidden;
+}
+.middle-panel{
+    background-color: #efefef;
 }
 .login-container label.login-label{
     line-height: 1em;
@@ -284,7 +301,7 @@ ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
     font-weight: 500;
 }
 .login-medium{
-    width: 48%;
+    width: 40px;
     border-radius: 20px;
     color: #fff;
 }
@@ -293,6 +310,15 @@ ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
 }
 .login-google{
     background-color: #db3236;
+}
+.login-text{
+    color: #6A00FF;
+}
+.login-dropdown .btn-link{
+    font-size: 12px;
+}
+.login-dropdown .btn-link:hover{
+    color: #6A00FF;
 }
 .custom-input{
     border-bottom: 1px solid #ced4da !important;
@@ -364,6 +390,11 @@ ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
 .right-border{
     border-right:1px solid #ced4da;
     padding-right: 10px;
+}
+.site-body{
+    padding: 20px 20px;
+    background-color: #fff;
+    border-radius: 5px;
 }
 
 /*Home style*/
