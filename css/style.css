@@ -24,6 +24,11 @@
 .pad-left-0{
     padding-left: 0px;
 }
+.pad-left-right-0{
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 5px;
+}
 .mar-top-5{
     margin-top: 5px;
 }
@@ -471,6 +476,7 @@ ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
 .table.table-borderless td,.table.table-borderless th{
     border: none;
 }
+
 
 /*Home style*/
 .img-fluid{
