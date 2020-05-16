@@ -60,7 +60,7 @@
                             </div>
                             <div class="row cart-card mar-top-20">
                                 <div class="col-3 pad-left-0">
-                                    <img class="img-fluid" src="images/sbi.png" alt="vendor"/>
+                                    <img class="img-fluid" src="images/paytm.jpg" alt="vendor"/>
                                 </div>
                                 <div class="col-4">
                                     <label class="vendor-name pad-top-20">
@@ -103,29 +103,15 @@
                         </div>
                       <div class="col-12 col-sm-6">
                         <div class="card bill-details">
-                            <h5 class="card-header">Bill Details</h5>
+                            <h5 class="card-header">My Wallet</h5>
                             <div class="card-body">
                               <div class="row">
-                                  <div class="col-8">
-                                    <table class="table table-borderless">
-                                        <tbody>
-                                          <tr>
-                                            <td>Total Items</td>
-                                            <td>02</td>
-                                          </tr>
-                                          <tr>
-                                            <td>Sub Total Payment</td>
-                                            <td><i class="fas fa-rupee-sign"></i>200</td>
-                                          </tr>
-                                          <tr>
-                                            <td>Total Payment</td>
-                                            <td><i class="fas fa-rupee-sign"></i>400</td>
-                                          </tr>
-                                        </tbody>
-                                    </table>
-                                  </div>
-                                  <div class="col-4 pad-top-50">
-                                      <button class="btn btn-fraglo">Proceed to Pay</button>
+                                  <div class="col-10 offset-1 col-sm-8 offset-sm-2">
+                                        <img class="img-fluid" src="images/black-card-png.png" alt="card" />
+                                        <label class="curr-bal">Current Balance <br/> <i class="fas fa-rupee-sign"></i>600</label>
+                                        <button type="button" class="btn btn-fraglo btn-card">
+                                            Add Money
+                                        </button>
                                   </div>
                               </div>
                             </div>
@@ -165,32 +151,6 @@
         $(function(){
             $("#header").load("views/partials/headerloggedin.html"); 
             $("#footer").load("views/partials/footer.html"); 
-            
-            /* Image slider code*/
-            $('.carousel.carousel-multi-item.v-1 .carousel-item').each(function(){
-                var next = $(this).next();
-                if (!next.length) {
-                    next = $(this).siblings(':first');
-                }
-                next.children(':first-child').clone().appendTo($(this));
-            });
-
-            /* Image slider code*/
-            $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
-                var next = $(this).next();
-                if (!next.length) {
-                    next = $(this).siblings(':first');
-                }
-                next.children(':first-child').clone().appendTo($(this));
-
-                for (var i=0;i<2;i++) {
-                    next=next.next();
-                    if (!next.length) {
-                    next=$(this).siblings(':first');
-                    }
-                    next.children(':first-child').clone().appendTo($(this));
-                } 
-            });
         });
        
     </script>     

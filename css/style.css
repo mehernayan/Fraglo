@@ -249,7 +249,17 @@ header{
     font-size: .75rem;
     padding: 10px 0px 0px;
 }
-
+.curr-bal{
+    position: absolute;
+    top: 1rem;
+    left: 3rem;
+    color: #fff;
+}
+.btn-card{
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+}
 /*==================== 
 	Footer 
 ====================== */
