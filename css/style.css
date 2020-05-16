@@ -489,6 +489,15 @@ ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
     font-size: .85rem;
     padding: 0;
 }
+.card.login-details .card-header {
+    border: none;
+    color: #6A00FF;
+}
+.card.login-details .card-body{
+    border: none;
+    color: #222;
+    font-size: .85rem;
+}
 .profile-text .list-group-item{
     border: none;
 }
