@@ -260,6 +260,11 @@ header{
     top: 5rem;
     right: 2rem;
 }
+.btn-full{
+    width: 100% !important;
+    background-color: #fff;
+    text-align: left;
+}
 /*==================== 
 	Footer 
 ====================== */
