@@ -18,23 +18,6 @@
 .mar-right-30{
     margin-right: 30px;
 }
-.pad-left-20{
-    padding-left: 20px;
-}
-.pad-left-0{
-    padding-left: 0px;
-}
-.pad-0{
-    padding: 0 !important;
-}
-.pad-10{
-    padding: 10px;
-}
-.pad-left-right-0{
-    padding-left: 0px;
-    padding-right: 0px;
-    border-radius: 5px;
-}
 .mar-0{
     margin: 0 !important;
 }
@@ -62,7 +45,23 @@
 .mar-bot-50{
     margin-bottom : 50px;
 }
-
+.pad-left-20{
+    padding-left: 20px;
+}
+.pad-left-0{
+    padding-left: 0px;
+}
+.pad-0{
+    padding: 0 !important;
+}
+.pad-10{
+    padding: 10px;
+}
+.pad-left-right-0{
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 5px;
+}
 .pad-20{
     padding: 20px;
 }
@@ -121,11 +120,6 @@
 
 /*general styles end*/
 /*Frago Style starts*/
-
-/*.view {
-    background: url("https://mdbootstrap.com/img/Photos/Others/img (50).jpg")no-repeat center center;
-    background-size: cover;
-}*/
 html,body {
   height: 100%;background-color: #fff;
 }
@@ -378,14 +372,10 @@ ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
     border-radius:0;
     padding: .375rem 0rem;
 }
-.custom-select{
-    border-radius: 20px;
-}
 .form-container p a{
     font-weight: 500;
     color: #000;
 }
-
 /*varification*/
 
 .otp-inp {
@@ -396,52 +386,6 @@ ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
     border-radius:0;
     border-bottom:1px solid #ced4da !important;
     text-align: center;
-}
-.custom-block{
-    background-color: #ccc;
-    color: #000;
-    border-radius: 10px;
-    padding: 20px;
-}
-.mobile-icon{
-    font-size: 6rem;
-    margin-top: .28rem;
-}
-.email-icon {
-    font-size: 4rem;
-    margin-top: 1rem;
-}
-.mobile-text{
-    padding-top: 1rem;
-}
-.user-image{
-    height:40px;
-    width: 40px;
-    border-radius: 20px;
-    padding: 2px;
-    border: 1px solid #bbb;
-    display: inline-block;
-    margin-left:20px;
-}
-.btn-edit{
-    position: absolute;
-    right: 16px;
-    top: 1px;
-    background-color: transparent;
-    font-size:x-large;
-}
-.btn-edit:hover{
-    background-color: transparent;
-    color: #000;
-    border-color: transparent;
-}
-.top-border{
-    border-top:1px solid #ced4da;
-    padding-top: 10px;
-}
-.right-border{
-    border-right:1px solid #ced4da;
-    padding-right: 10px;
 }
 .site-body{
     padding: 20px 20px;
@@ -530,8 +474,6 @@ ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
     left: 7em;
     width: calc(100% - 7em);
 }
-ul.social-icons{margin-left: -40px;}
-ul.social-icons li {width:115px;display: inline-block;}
 @media (max-width: 992px){
     .navbar-collapse {
         background-color: #fff;
@@ -588,15 +530,6 @@ ul.social-icons li {width:115px;display: inline-block;}
     width: 54%;
     padding-left: 10px;
 }
-.order-banner .figure-img{
-    display: inline-block;
-    width: 30%;
-}
-.order-banner .figure-caption{
-    display: inline-block;
-    width: 68%;
-    padding-left: 10px;
-}
 .card-pad{
     padding: 1rem 0rem;
     background: linear-gradient(to right, #FFD900 60%, #ff9933 100%);
@@ -626,46 +559,6 @@ ul.social-icons li {width:115px;display: inline-block;}
 .vertical-line{
     border-right: 1px solid #6A00FF;
 }
-.nav-pills .nav-link{
-    color: #000;
-}
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #000;
-    font-weight: bold;
-    background-color: transparent;
-}
-.founder-text{
-    font-size: 30px;
-}
-.quote-container{
-    background: url(../images/quote.png) top center no-repeat;
-    padding-top: 35px;
-}
-.sub-bottom-panel-2{
-    background: url(../images/nailbar.jpg) top center no-repeat;
-    background-color: darkgreen;
-    padding-top: 35px;
-    color: #fff;
-}
-.calendar-date{
-    min-height: 120px;
-    background-color: #ccc;
-}
-.calendar-time{
-    min-height: 100px;
-    background-color: #fff;
-}
-.btn-reserve{
-    width: auto;
-    padding: 6px 20px;
-    margin-top: 40%;
-}
-@media (max-width: 576px){
-    .btn-reserve{
-        width: 100%;
-        margin-top: 0%;
-    }
-}
 .modal-header{
     border-bottom:none;
     padding: 0.5rem 1rem 0 1rem;
@@ -674,84 +567,7 @@ ul.social-icons li {width:115px;display: inline-block;}
     border-top:none;
     justify-content: center;
 }
-.btn-date{
-    width: 3em;
-    height: 3em;
-    border-radius: 1.5em;
-    margin: 5px;
-}
 
-ol {
-    list-style-type: none;
-    counter-reset: item;
-    margin: 0;
-    padding: 0;
-  }
   
-  ol.orderlist > li {
-    display: table;
-    counter-increment: item;
-    margin-bottom: 0.6em;
-  }
   
-  ol.orderlist > li:before {
-    content: counters(item, ".") ". ";
-    display: table-cell;
-    padding-right: 0.6em;    
-  }
   
-  li ol.orderlist > li {
-    margin: 0;
-  }
-  
-  li ol.orderlist > li:before {
-    content: counters(item, ".") " ";
-  }
-
-  .inner-text{
-      display: inline-block;
-      margin-right: 10px;
-  }
-  .class-left{
-      color: #aaa;
-  }
-  .hr-border{
-      border-bottom: 1px solid #ccc;
-  }
-  .upcoming-ride{
-    background: url(../images/cyclist.jpg) center no-repeat;
-    width: 100%;
-    height: 80%;
-    min-height: 250px;
-    border-radius: 10px;
-    color: #fff;
-    padding:20px;
-  }
-  .badge-secondary {
-    background-color: #ccc;
-    border-radius: 12px;
-    color: #000;
-    padding: 6px 12px;
-}
-.records-number{
-    color: #ccc;
-    font-size: 8em;
-    font-weight: 700;
-}
-.records-text{
-    position: absolute;
-    top: 60%;
-    left: 25%;
-    font-size: 2em;
-    line-height: 1em;
-    font-weight: 600;
-}
-.modal-select{
-    width: 70%;
-}
-.shoe-size{
-    cursor: pointer;
-}
-.margin-zero{
-    margin: 0rem;
-}
