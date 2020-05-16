@@ -572,20 +572,20 @@ ul.social-icons li {width:115px;display: inline-block;}
 .card  a:hover{
     text-decoration: none;
 }
-figure {
+.card figure {
     margin: 0 0 0rem;
     padding: 8px 0px 0px 8px;
 }
-.figure{
+.card .figure{
     display: inline-flex;
 }
-.figure-img{
+.card .figure-img{
     display: inline-block;
-    width: 49%;
+    width: 44%;
 }
-.figure-caption{
+.card .figure-caption{
     display: inline-block;
-    width: 49%;
+    width: 54%;
     padding-left: 10px;
 }
 .order-banner .figure-img{
