@@ -71,6 +71,9 @@
 .pad-top-20{
     padding-top : 20px;
 }
+.pad-top-40{
+    padding-top: 40px;
+}
 .pad-top-50{
     padding-top : 50px;
 }
@@ -144,7 +147,8 @@ header{
 .locator-bar .nav-link{
     color: #6A00FF !important;
 }
-.navbar-fraglo .nav-link{
+
+.navbar-fraglo .nav-link {
     color: #fff !important;
 }
 .navbar-fraglo .nav-item{
@@ -267,8 +271,8 @@ header{
 #footer{
     position: relative;width: 100%;color: #fff;
 }
-footer .main-footer{	padding: 20px 0 10px 0;	background: #252525;}
-footer ul{	padding-left: 0;	list-style: none;margin-left: -14px;}
+footer .main-footer{	padding: 10px 0 10px 0;	background: #252525;}
+footer ul{	padding-left: 0;	list-style: none;}
 footer ul a,footer ul a:active,footer ul a:link{color:#000;font-weight: bold;}
 /* Copy Right Footer */
 .footer-copyright{background: #252525;font-size: .6em; padding-top: 10px;}
@@ -478,22 +482,6 @@ ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
     left: 7em;
     width: calc(100% - 7em);
 }
-@media (max-width: 992px){
-    .navbar-collapse {
-        background-color: #fff;
-        opacity: .95;
-        padding: 10px;
-    }
-    .nav-item{
-        line-height: 1;
-    }
-    
-}
-@media (max-width: 576px){
-    .absolute-container {
-        bottom: 0rem;
-    }
-}
 .carousel-item.active{
     display: flex !important;
 }
@@ -581,6 +569,63 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+/* hack for mobile view*/
+@media (max-width: 576px){
+    .navbar-fraglo .navbar-collapse .nav-link{
+        color: #6A00FF !important;
+    }
+    .navbar-fraglo .navbar-collapse .nav-item{
+        width:100%;text-align: left;
+    }
+    .navbar-fraglo .navbar-collapse .btn-transparent{
+        color: #6A00FF;
+        padding-left: 0px;
+    }
+    .dropdown-menu {
+        right: auto;
+        left: 0;
+        height: 200px;
+        overflow: auto;
+    }
+    .navbar-toggler{
+        margin-top: -8px;
+        background-color: #fff;
+        opacity: .95;
+    }
+    .navbar-nav.locator-bar-inner {
+        margin-top: -8px;
+        -webkit-box-orient: horizontal;
+        flex-direction: row;
+    }
+    span.tollfree{
+        font-size: .75rem;
+    }
+    span.location{
+        display: none;
+    }
+    span.offer-text{
+        display: none;
+    }
+    #nav-cart {
+        position: static;
+        left: 0rem;
+    }
+    .btn-fixed {
+        width: 90px !important;
+    }
+    .navbar-collapse {
+        background-color: #fff;
+        opacity: .95;
+        padding: 10px;
+        border-bottom:1px solid #ccc;
+    }
+    .nav-item{
+        line-height: 1;
+    }
+    .vertical-line.mobile{
+        border-right: none;
+    }
+}
   
-  
-  
+/*This is appilcation for only mobile(width:576px) and desktop(width:1192px)*/
