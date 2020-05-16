@@ -80,7 +80,17 @@
             $("#header").load("views/partials/header.html"); 
             $("#footer").load("views/partials/footer.html"); 
         });
-       
+        function showOtp(e) {
+            e.preventDefault();
+            $(".phone-main").hide();
+            $(".otp-main").show();
+        };
+
+        function showNumber(e) {
+            e.preventDefault();
+            $(".phone-main").show();
+            $(".otp-main").hide();
+        };
     </script>     
     </body>
 </html>

@@ -379,14 +379,18 @@ ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
 /*varification*/
 
 .otp-inp {
-    width: 19%;
+    width: 18%;
     display: inline-block;
     margin-right:5%;
     border: none;
     border-radius:0;
-    border-bottom:1px solid #ced4da !important;
+    border-bottom:1px solid #6A00FF !important;
     text-align: center;
 }
+.resend-otp-link,.resend-otp-link:hover,.resend-otp-link:active{
+    color: #6A00FF;
+}
+
 .site-body{
     padding: 20px 20px;
     background-color: #fff;
@@ -567,7 +571,16 @@ ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
     border-top:none;
     justify-content: center;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
   
   
   

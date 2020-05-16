@@ -226,8 +226,7 @@
     <script> 
         $(function(){
             $("#header").load("views/partials/header.html"); 
-            $("#footer").load("views/partials/footer.html"); 
-
+            $("#footer").load("views/partials/footer.html");       
             
             /* Image slider code*/
             $('.carousel.carousel-multi-item.v-1 .carousel-item').each(function(){
@@ -255,7 +254,18 @@
                 } 
             });
         });
-       
+
+        function showOtp(e) {
+            e.preventDefault();
+            $(".phone-main").hide();
+            $(".otp-main").show();
+        };
+
+        function showNumber(e) {
+            e.preventDefault();
+            $(".phone-main").show();
+            $(".otp-main").hide();
+        };
     </script>     
     </body>
 </html>
