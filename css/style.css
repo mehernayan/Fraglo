@@ -572,7 +572,7 @@ input[type=number] {
 }
 
 /* hack for mobile view  576px and tab view 992px*/
-@media (max-width: 992px){
+@media (max-width: 991px){
     .navbar-fraglo .navbar-collapse .nav-link{
         color: #6A00FF !important;
     }
@@ -632,4 +632,10 @@ input[type=number] {
     }
 }
   
-/*This is appilcation for only mobile(width:576px) and desktop(width:1192px)*/
+/*This is appilcation for only mobile(width:576px) and desktop(width:1200px)*/
+
+@media (min-width: 992px) and (max-width:1199px){
+    #nav-cart {
+        left: 21rem;
+    }
+}
