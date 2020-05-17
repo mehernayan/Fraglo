@@ -103,7 +103,7 @@
     border: 1px solid #6A00FF;
     color: #6A00FF;
     margin-top: 2rem;
-    min-width: 100%;
+    width: 100%;
 }
 .btn-fraglo-order:hover,.btn-fraglo-order:active,.btn-fraglo-order:focus{
     border: 1px solid #6A00FF;
@@ -332,7 +332,6 @@ ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
 .middle-panel{
     background-color: #efefef;
     font-size: .85rem;
-    min-height: 410px;
 }
 .login-container label.login-label{
     line-height: 1em;
@@ -637,5 +636,8 @@ input[type=number] {
 @media (min-width: 992px) and (max-width:1199px){
     #nav-cart {
         left: 21rem;
+    }
+    .btn-fraglo-order {
+        white-space: pre-wrap;
     }
 }
