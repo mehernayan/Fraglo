@@ -416,7 +416,7 @@ ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
 .vendor-name .btn-floating{
     background-color: #fff;
     color: #6A00FF;
-    padding: 4px;
+    padding: 8px 4px;
 }
 .vendor-name .item-amount{
     border: none;
@@ -625,9 +625,6 @@ input[type=number] {
     }
     .vertical-line.mobile{
         border-right: none;
-    }
-    .vendor-name .btn-floating {
-        padding: 6px;
     }
 }
   
