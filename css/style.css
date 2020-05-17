@@ -227,7 +227,7 @@ header{
 }
 .vertical-line-card {
     border-right: 1px solid #6A00FF;
-    height: 60px;
+    height: 90%;
     position: absolute;
     top: 0;
     right: 0;
@@ -332,6 +332,7 @@ ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
 .middle-panel{
     background-color: #efefef;
     font-size: .85rem;
+    min-height: 410px;
 }
 .login-container label.login-label{
     line-height: 1em;
@@ -416,11 +417,11 @@ ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
 .vendor-name .btn-floating{
     background-color: #fff;
     color: #6A00FF;
-    padding: 8px;
+    padding: 4px;
 }
 .vendor-name .item-amount{
     border: none;
-    width: 2rem;
+    width: 1.5rem;
     text-align: center;
     color: #6A00FF;
 }
@@ -570,8 +571,8 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-/* hack for mobile view*/
-@media (max-width: 576px){
+/* hack for mobile view  576px and tab view 992px*/
+@media (max-width: 992px){
     .navbar-fraglo .navbar-collapse .nav-link{
         color: #6A00FF !important;
     }
@@ -625,6 +626,9 @@ input[type=number] {
     }
     .vertical-line.mobile{
         border-right: none;
+    }
+    .vendor-name .btn-floating {
+        padding: 6px;
     }
 }
   
