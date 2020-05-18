@@ -121,7 +121,7 @@
                             </div>
                         </div>
                       <div class="col-12 col-lg-6 mar-top-20">
-                        <div class="card bill-details">
+                        <div class="card card-fraglo">
                             <h5 class="card-header">Bill Details</h5>
                             <div class="card-body">
                               <div class="row">
@@ -144,7 +144,7 @@
                                     </table>
                                   </div>
                                   <div class="col-4 pad-top-50">
-                                      <button class="btn btn-fraglo">Proceed to Pay</button>
+                                      <button class="btn btn-fraglo" data-toggle="modal" data-target="#paymentModalCenter">Proceed to Pay</button>
                                   </div>
                               </div>
                             </div>
@@ -176,6 +176,26 @@
           </div>
           </div>
       </div>
+      <!-- Modal -->
+      <div class="modal fade" id="paymentModalCenter" tabindex="-1" role="dialog" aria-labelledby="paymentModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content btn-radial">
+            <div class="modal-body text-center">
+              <img src="../../Fraglo-v1/Fraglo/images/success.gif" alt="success" style="width: 225px;" />
+              <h6 class="success-msg">Congratulation! Your order has been placed</h6>
+              <p class="text-center vendor-description">Order ID : #7587988</p>
+              <div class="text-center">
+                <button type="button" class="btn btn-fraglo" data-dismiss="modal" aria-label="Close">
+                    Thank you!
+                </button>
+              </div>
+            </div>
+            <!--<div class="modal-footer text-center">
+                <button type="button" class="btn login-proceed btn-fixed">Buy Package</button>
+            </div>-->
+        </div>
+        </div>
+    </div>
         <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
         <script src="js/lib/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

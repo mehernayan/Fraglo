@@ -119,6 +119,10 @@
     background-color: #6A00FF !important;
     color: #fff;
 }
+.btn-takeaway{
+    margin-top: 4rem;
+    margin-left: -6rem;
+}
 
 /*general styles end*/
 /*Frago Style starts*/
@@ -424,10 +428,10 @@ ul.social-footer2 li {width:25px;display: inline-block;margin-right: 5px;}
     text-align: center;
     color: #6A00FF;
 }
-.card.bill-details,.card.profile-details{
+.card.card-fraglo,.card.profile-details{
     border: none;
 }
-.bill-details .card-header{
+.card-fraglo .card-header{
     border: none;
     color: #6A00FF;
 }
@@ -596,6 +600,9 @@ input[type=number] {
 .filter-item a{
     color: #222;
 }
+.success-msg{
+    color: #209b20;
+}
 
 /* hack for mobile view  576px and tab view 992px*/
 @media (max-width: 991px){
@@ -664,4 +671,36 @@ input[type=number] {
     .btn-fraglo-order {
         white-space: pre-wrap;
     }
+}
+
+@media (max-width:767px){
+    .btn-takeaway{
+        margin-top: 1rem;
+        margin-left: auto;
+    }
+    .timepicker-picker{
+        padding-left: 11rem;
+    }
+}
+
+/*calendar*/
+@import url('https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,500,600,700,800,900');
+
+.timepicker {
+  max-width: 100px;
+  border-radius: 0;
+}
+.bootstrap-datetimepicker-widget table td {
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+}
+.bootstrap-datetimepicker-widget table td span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 2px 1.5px;
+    cursor: pointer;
+    border-radius: 4px;
 }

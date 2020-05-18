@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,500,600,700,800,900" />
         <!--<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
         <script src="https://kit.fontawesome.com/523214f801.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -38,88 +40,20 @@
                             <div class="card card-fraglo">
                               <div class="card-header">
                                 <div class="row">
-                                    <div class="col-6"><h5 class="mar-top-5">Filter</h5></div>
-                                    <div class="col-6 text-right">
-                                      <button class="btn btn-fraglo">Apply</button>
-                                    </div>
+                                    <div class="col-6"><h6 class="mar-top-5">Reserve Table</h6></div>
                                 </div>
                               </div>
                               <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12">
-                                      <form>
-                                        <div class="row">
-                                          <div class="col-3">
-                                            <ul class="navbar-nav mr-auto">
-                                              <li id="filter-cuisine" class="nav-item filter-item  active">
-                                                <a class="nav-link filter-link" href="#">Cuisine</a>
-                                              </li>
-                                              <li id="filter-food" class="nav-item filter-item">
-                                                <a class="nav-link filter-link" href="#">Food Type</a>
-                                              </li>
-                                          </div>
-                                          <div class="col-9">
-                                            <table class="table table-borderless"> 
-                                              <tbody>
-                                                <tr>
-                                                  <td>
-                                                    <div class="form-check">
-                                                      <input class="form-check-input" type="checkbox" value="" id="andhra">
-                                                      <label class="form-check-label" for="andhra">
-                                                        Andhra
-                                                      </label>
-                                                    </div>
-                                                  </td>
-                                                  <td>
-                                                    <div class="form-check">
-                                                      <input class="form-check-input" type="checkbox" value="" id="american">
-                                                      <label class="form-check-label" for="american">
-                                                        American
-                                                      </label>
-                                                    </div>
-                                                  </td>
-                                                  <td>
-                                                    <div class="form-check">
-                                                      <input class="form-check-input" type="checkbox" value="" id="chinese">
-                                                      <label class="form-check-label" for="chinese">
-                                                       Chinese
-                                                      </label>
-                                                    </div>
-                                                  </td>
-                                                </tr>
-                                                <tr>
-                                                  <td>
-                                                    <div class="form-check">
-                                                      <input class="form-check-input" type="checkbox" value="" id="north">
-                                                      <label class="form-check-label" for="north">
-                                                        North Indian
-                                                      </label>
-                                                    </div>
-                                                  </td>
-                                                  <td>
-                                                    <div class="form-check">
-                                                      <input class="form-check-input" type="checkbox" value="" id="south">
-                                                      <label class="form-check-label" for="south">
-                                                        South Indian
-                                                      </label>
-                                                    </div>
-                                                  </td>
-                                                  <td>
-                                                    <div class="form-check">
-                                                      <input class="form-check-input" type="checkbox" value="" id="kerala">
-                                                      <label class="form-check-label" for="kerala">
-                                                       Kerala
-                                                      </label>
-                                                    </div>
-                                                  </td>
-                                                </tr>
-                                              </tbody>
-                                            </table>
-                                          </div>
-                                        </div>
-                                     </form>
-                                    </div>
-                                </div>
+                                <form>
+                                  <div class="row">
+                                      <div class="col-12 col-md-11">
+                                        <div id="datetimepicker12"></div>
+                                      </div>
+                                      <div class="col-12 col-md-1 text-center">
+                                        <button class="btn btn-fraglo btn-takeaway">Search Restaurant</button>
+                                      </div>
+                                  </div>
+                                </form>
                               </div>
                             </div>
                           </div>
@@ -129,7 +63,7 @@
                     <div class="col-12 col-lg-6 mar-top-20" >
                       <div class="row">
                         <div class="col-12 col-lg-6">
-                          <h5 class="site-header">In-restaurant Ordering</h5>
+                          <h5 class="site-header">Take Away</h5>
                         </div>
                         <div class="col-12 col-lg-6">
                           <input type="search" class="form-control form-control-sm" id="resSearch" placeholder="Search...">
@@ -295,10 +229,26 @@
         <script src="js/lib/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+        <!--CDN bootstarp calendar-->
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>-->
+        <script src="js/lib/bootstrap-calendar.min.js"></script>
     <script> 
         $(function(){
             $("#header").load("views/partials/headerloggedin.html"); 
-            $("#footer").load("views/partials/footer.html");       
+            $("#footer").load("views/partials/footer.html");     
+
+            /*calendar*/
+            moment.locale('en', {
+                week: { dow: 1 } // Monday is the first day of the week
+            });
+            $('#datetimepicker12').datetimepicker({
+              inline: true,
+              sideBySide: true,
+              format: 'DD-MM-YY HH:mm',
+              stepping: 30,
+              minDate: moment()
+            });  
             
             /* Image slider code*/
             $('.carousel.carousel-multi-item.v-1 .carousel-item').each(function(){
