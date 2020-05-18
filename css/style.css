@@ -60,7 +60,6 @@
 .pad-left-right-0{
     padding-left: 0px;
     padding-right: 0px;
-    border-radius: 5px;
 }
 .pad-20{
     padding: 20px;
@@ -182,7 +181,8 @@ header{
 .search-header{
     position: absolute;
     right: 1.4rem;
-    top: .5rem;
+    top: .6rem;
+    color: #6A00FF;
 }
 .offer-image{
     display: inline-block;
@@ -568,6 +568,33 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+.vendor-card{
+    background-color: #fff;
+    margin: 0;
+}
+.vendor-card .vendor-description{
+    font-size: .85rem;
+}
+.vendor-description{
+    font-size: .75rem;
+}
+.vendor-card label{
+    margin-bottom: .25rem;
+    display: block;   
+}
+.filter-item{
+    background-color: #ccc;
+    text-align: center;
+}
+.filter-item.active{
+    background-color: #6A00FF;
+}
+.filter-item.active a{
+    color: #fff;
+}
+.filter-item a{
+    color: #222;
 }
 
 /* hack for mobile view  576px and tab view 992px*/
