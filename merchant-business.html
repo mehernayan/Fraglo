@@ -210,6 +210,14 @@
             $("#header").load("views/partials/header-merchant.html"); 
             $("#footer").load("views/partials/footer.html"); 
         });
+
+        /* ON OFF of header button*/
+        function toggleStatus(e){
+          e.preventDefault();
+          $('a.toggler').toggleClass('off');
+          $('a.toggler').html('ON');
+          $('a.toggler.off').html('OFF');
+        }
        
     </script>     
     </body>

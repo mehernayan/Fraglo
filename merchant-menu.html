@@ -177,7 +177,7 @@
                                             </td>
                                             <td>
                                                 <div class="switch">
-                                                    <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                                                    <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox" checked="checked">
                                                     <label for="cmn-toggle-1"></label>
                                                 </div>
                                             </td>
@@ -268,6 +268,14 @@
             $("#header").load("views/partials/header-merchant.html"); 
             $("#footer").load("views/partials/footer.html"); 
         });
+
+        /* ON OFF of header button*/
+        function toggleStatus(e){
+          e.preventDefault();
+          $('a.toggler').toggleClass('off');
+          $('a.toggler').html('ON');
+          $('a.toggler.off').html('OFF');
+        }
        
     </script>     
     </body>

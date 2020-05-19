@@ -67,6 +67,9 @@
 .pad-top-10{
     padding-top : 10px;
 }
+.pad-top-15{
+    padding-top : 15px;
+}
 .pad-top-20{
     padding-top : 20px;
 }
@@ -209,6 +212,9 @@ header{
 .offer-text{
     position: absolute;
     top: 9px;
+}
+.toggle-pad{
+    padding-top: 8px;
 }
 .offer-pad{
     padding-top: 5px;
@@ -625,11 +631,27 @@ label.address{
 .revenue-card{
     margin: 0px 0px 20px 0px;
 }
+.profile-card.card{
+    flex-direction: row;
+    color: #222;
+    margin: 10px 0px;
+}
 .small-text{
     font-size: .75rem;
 }
 .large-text{
     font-size: 1.25rem;
+}
+.label-type{
+    color: #aaa;
+}
+.btn-how:hover{
+    background-color: #6A00FF;
+    color: #fff !important;
+}
+.btn-how.active{
+    background-color: #6A00FF;
+    color: #fff !important;
 }
 
 
@@ -785,3 +807,20 @@ label.address{
   input.cmn-toggle-round:checked + label:after {
     margin-left: 30px;
   }
+
+  /* for toggle button */
+  a.toggler {
+    background: #2a852a;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 5px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all .5s ease;
+    font-size: .75rem;
+    color: #fff;
+}
+
+a.toggler.off {
+    background: #dd382c;
+}
