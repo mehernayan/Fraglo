@@ -96,7 +96,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-12 text-center pad-top-10 pad-bot-10">
-                                            <button class="btn btn-fraglo">Cancel</button>
+                                            <button class="btn btn-fraglo" data-toggle="modal" data-target="#cancelModalCenter">Cancel</button>
                                         </div>
                                     </div>
                                 </div>
@@ -181,7 +181,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-12 text-center pad-top-10 pad-bot-10">
-                                            <button class="btn btn-fraglo">Rate Food</button>
+                                            <button class="btn btn-fraglo" data-toggle="modal" data-target="#rateFoodModalCenter">Rate Food</button>
                                         </div>
                                     </div>
                                 </div>
@@ -266,7 +266,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-12 text-center pad-top-10 pad-bot-10">
-                                            <button class="btn btn-fraglo">Order again</button>
+                                            <a type="button" class="btn btn-fraglo" href="user-home.html">Order again</a>
                                         </div>
                                     </div>
                                 </div>
@@ -351,7 +351,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-12 text-center pad-top-10 pad-bot-10">
-                                            <button class="btn btn-fraglo">Cancel</button>
+                                            <button class="btn btn-fraglo" data-toggle="modal" data-target="#cancelModalCenter">Cancel</button>
                                         </div>
                                     </div>
                                 </div>
@@ -383,6 +383,72 @@
               </div>-->
           </div>
           </div>
+        </div>
+        <!-- Modal for item popup-->
+      <div class="modal fade" id="cancelModalCenter" tabindex="-1" role="dialog" aria-labelledby="cancelModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content btn-radial">
+            <div class="modal-header">
+              <h5 class="site-header">Cancel Order</h5>
+              <button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Close">
+                X
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="col-12" >
+                <div class="row">
+                  <div class="col-12 card-order mar-top-10 text-center">
+                    Do you want to cancel order?
+                  </div>
+                  <div class="col-12 text-center mar-top-50">
+                    <a type="button" class="btn btn-fraglo btn-fixed" href="#" data-dismiss="modal">YES</a>
+                    <a type="button" class="btn btn-fraglo btn-fixed" href="#" data-dismiss="modal">NO</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+      <!-- Modal for item popup-->
+      <div class="modal fade" id="rateFoodModalCenter" tabindex="-1" role="dialog" aria-labelledby="rateFoodModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content btn-radial">
+            <div class="modal-header">
+              <h5 class="site-header">Rate Food</h5>
+              <button type="button" class="btn btn-close" data-dismiss="modal" aria-label="Close">
+                X
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                <div class="row">
+                  <div class="col-12 card-order mar-top-10 text-center">
+                    <div class="check-btn">
+                      <input id="rateSatisfied" name="rate" class="btn-rate" type="radio">
+                      <label for="rateSatisfied"></label>
+                    </div>
+                    <div class="check-btn">
+                      <input id="rateOk" name="rate" class="btn-rate" type="radio">
+                      <label for="rateOk"></label>
+                    </div>
+                    <div class="check-btn">
+                      <input id="rateNotOk" name="rate" class="btn-rate" type="radio">
+                      <label for="rateNotOk"></label>
+                    </div>
+                    <div class="check-btn">
+                      <input id="rateNotSatisfied" name="rate" class="btn-rate" type="radio">
+                      <label for="rateNotSatisfied"></label>
+                    </div>
+                  </div>
+                  <div class="col-12 text-center mar-top-50">
+                    <a type="button" class="btn btn-fraglo btn-fixed" href="#" data-dismiss="modal">Submit</a>
+                  </div>
+                </div>
+              </form>
+          </div>
+        </div>
+        </div>
       </div>
         <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
         <script src="js/lib/jquery.min.js"></script>

@@ -126,9 +126,6 @@
     margin-top: 4rem;
     margin-left: -6rem;
 }
-table tr td{
-    font-size: .85rem;
-}
 
 /*general styles end*/
 /*Frago Style starts*/
@@ -851,3 +848,66 @@ label.address{
 a.toggler.off {
     background: #dd382c;
 }
+
+/*For rate input*/
+.btn-rate {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+  }
+  .btn-rate + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+  }
+  
+  input.btn-rate + label:after{
+    display: inline-block;
+    position: relative;
+    content: "";
+    width: 3rem;
+    height: 3rem;
+  }
+  input#rateSatisfied + label:after{
+    background:  url("../images/satisfied-inactive.svg")no-repeat center center;
+    background-size: contain;
+ }
+  input#rateSatisfied:checked + label:after {
+    background:  url("../images/satisfied-active.svg")no-repeat center center;
+    background-size: contain;
+  }
+
+  input#rateOk + label:after{
+    background:  url("../images/ok-inactive.svg")no-repeat center center;
+    background-size: contain;
+ }
+ input#rateOk:checked + label:after {
+    background:  url("../images/ok-active.svg")no-repeat center center;
+    background-size: contain;
+  }
+  input#rateNotOk + label:after{
+    background:  url("../images/notok-inactive.svg")no-repeat center center;
+    background-size: contain;
+ }
+ input#rateNotOk:checked + label:after {
+    background:  url("../images/notok-active.svg")no-repeat center center;
+    background-size: contain;
+  }
+  input#rateNotSatisfied + label:after{
+    background:  url("../images/notsatisfied-inactive.svg")no-repeat center center;
+    background-size: contain;
+ }
+ input#rateNotSatisfied:checked + label:after {
+    background:  url("../images/notsatisfied-active.svg")no-repeat center center;
+    background-size: contain;
+  }
+  .check-btn{
+      display: inline-block;
+      margin: 0px 10px;
+  }
+
+  .modal-body table tr td{
+      font-size: .75rem;
+  }

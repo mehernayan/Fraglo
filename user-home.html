@@ -75,7 +75,7 @@
                           <div class="carousel-item row active">
                             <div class="col-12 col-md-6">
                               <div class="card mb-2">
-                                <a href="#.">
+                                <a href="#"  data-toggle="modal" data-target="#popularRestaurantModalCenter">
                                   <figure class="figure">
                                     <img src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg" class="figure-img img-fluid rounded" alt="...">
                                     <figcaption class="figure-caption">
@@ -91,7 +91,7 @@
                           <div class="carousel-item row">
                             <div class="col-12 col-md-6">
                               <div class="card mb-2">
-                                <a href="#.">
+                                <a href="#" data-toggle="modal" data-target="#popularRestaurantModalCenter">
                                   <figure class="figure">
                                     <img src="https://mdbootstrap.com/img/Photos/Others/img (29).jpg" class="figure-img img-fluid rounded" alt="...">
                                     <figcaption class="figure-caption">
@@ -129,7 +129,7 @@
                               <div class="carousel-item row active">
                                 <div class="col-12 col-md-6 col-lg-3">
                                   <div class="card mb-2">
-                                    <a href="#.">
+                                    <a href="#" data-toggle="modal" data-target="#nearbyRestaurantModalCenter">
                                       <figure class="figure">
                                         <img src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg" class="figure-img img-fluid rounded" alt="...">
                                         <figcaption class="figure-caption">
@@ -145,7 +145,7 @@
                               <div class="carousel-item row">
                                 <div class="col-12 col-md-6 col-lg-3">
                                   <div class="card mb-2">
-                                    <a href="#.">
+                                    <a href="#" data-toggle="modal" data-target="#nearbyRestaurantModalCenter">
                                       <figure class="figure">
                                         <img src="https://mdbootstrap.com/img/Photos/Others/img (34).jpg" class="figure-img img-fluid rounded" alt="...">
                                         <figcaption class="figure-caption">
@@ -161,7 +161,7 @@
                               <div class="carousel-item row">
                                 <div class="col-12 col-md-6 col-lg-3">
                                   <div class="card mb-2">
-                                    <a href="#.">
+                                    <a href="#" data-toggle="modal" data-target="#nearbyRestaurantModalCenter">
                                       <figure class="figure">
                                         <img src="https://mdbootstrap.com/img/Photos/Others/img (38).jpg" class="figure-img img-fluid rounded" alt="...">
                                         <figcaption class="figure-caption">
@@ -177,7 +177,7 @@
                               <div class="carousel-item row">
                                 <div class="col-12 col-md-6 col-lg-3">
                                   <div class="card mb-2">
-                                    <a href="#.">
+                                    <a href="#" data-toggle="modal" data-target="#nearbyRestaurantModalCenter">
                                       <figure class="figure">
                                         <img src="https://mdbootstrap.com/img/Photos/Others/img (29).jpg" class="figure-img img-fluid rounded" alt="...">
                                         <figcaption class="figure-caption">
@@ -218,6 +218,62 @@
               </div>-->
           </div>
           </div>
+        </div>
+      <!-- Modal for Popular restaurant popup-->
+      <div class="modal fade" id="popularRestaurantModalCenter" tabindex="-1" role="dialog" aria-labelledby="popularRetaurantModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content btn-radial">
+            <div class="modal-header pop-header text-center">
+              <h5 class="site-header">Select Order Type</h5>
+            </div>
+            <div class="modal-body">
+              <div class="col-12" >
+                <div class="row">
+                  <div class="col-12 col-md-6 card-order mar-top-10 vertical-line mobile">
+                    <div class="inrest-image-pop">
+                     
+                    </div>
+                    <a type="button" class="btn btn-transparent btn-fraglo-order" href="in-restaurant.html">In-Restaurant Ordering</a>
+                  </div>
+                  <div class="col-12 col-md-6 card-order mar-top-10">
+                    <div class="taway-image-pop">
+                      
+                    </div>
+                    <a type="button" class="btn btn-transparent btn-fraglo-order" href="takeaway.html">Take Away</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+      <!-- Modal for Nearby restaurant popup-->
+      <div class="modal fade" id="nearbyRestaurantModalCenter" tabindex="-1" role="dialog" aria-labelledby="nearbyRetaurantModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content btn-radial">
+            <div class="modal-header pop-header text-center">
+              <h5 class="site-header">Select Order Type</h5>
+            </div>
+            <div class="modal-body">
+              <div class="col-12" >
+                <div class="row">
+                  <div class="col-12 col-md-6 card-order mar-top-10 vertical-line mobile">
+                    <div class="inrest-image-pop">
+                     
+                    </div>
+                    <a type="button" class="btn btn-transparent btn-fraglo-order" href="in-restaurant.html">In-Restaurant Ordering</a>
+                  </div>
+                  <div class="col-12 col-md-6 card-order mar-top-10">
+                    <div class="taway-image-pop">
+                      
+                    </div>
+                    <a type="button" class="btn btn-transparent btn-fraglo-order" href="takeaway.html">Take Away</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
       </div>
         <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
         <script src="js/lib/jquery.min.js"></script>
@@ -254,6 +310,12 @@
                 } 
             });
         });
+
+        function showOtp(e) {
+            e.preventDefault();
+            $(".phone-main").hide();
+            $(".otp-main").show();
+        };
     </script>     
     </body>
 </html>
